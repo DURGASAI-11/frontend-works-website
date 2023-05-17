@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    <link rel="stylesheet" href="workstyle.css">
+    <script src="https://kit.fontawesome.com/74ec0e84e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section>
+        <div class="transitions">
+            <div class="cover cover1" ></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+            <div class="cover cover4"></div>
+        </div>
+        <div class="transitions1">
+            <div class="cover11 cover5" ></div>
+            <div class="cover11 cover6"></div>
+            <div class="cover11 cover7"></div>
+            <div class="cover11 cover8"></div>
+        </div>
+        <a href="./index.html" id="btn" class="link"><i class="fa fa-solid fa-arrow-left" id="backward"></i></a>
+        <div class="gridhead">UX DESIGN</div> 
+        <hr class="fill0 reveal active">
+        <div class="container">
+            
+            <div class="item">
+                <div class="item_one">
+                    <div class="item_one-one">
+                        <span class="id1" >
+                           <a href=""> <i class="fa fa-solid fa-wifi " id="icon-size1"></i></a>
+                        </span>
+                        <span>Wi-Fi
+                            <div class="mar-lef">Home</div> </span>
+                    </div>
+        
+                    <div class="item_one-one">
+                        <span class="id2">
+                           <a href=""> <i class="fa fa-solid fa-bluetooth " id="icon-size2"></i></a>
+                        </span>
+                        <span>
+                            Bluetooth
+                          <a href=""><div class="mar-lef">Tooth</div></a>
+                        </span>
+                    </div>
+                    <div class="item_one-one">
+                        <span class="id3">
+                            <a href=""><i class="fa fa-brands fa-apple" id="icon-size3"></i></a>
+                        </span>
+                        <span>
+                            Apple
+                           <a href=""> <div class="mar-lef">Drop</div></a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+            <div class="flex">                
+                <span class="id4">
+                    <a href="#"><i class="fa fa-solid fa-moon"  id="icon-size4"></i></a>
+                </span>
+               
+                <span>
+                    <div class="dnd">
+                        Do Not <br>
+                        Disturb
+                    </div>
+                </span>
+            </div>
+
+            </div>
+
+            <div class="item" >
+                <div id="plane" class="id5"><a href=""><i class="fa fa-regular fa-dumbbell" id="icon-size5" ></i></a></div>
+                <div id="brightness">Brightness level</div>
+            </div>
+            <div class="item">
+                <div id="plane"  class="id6"><a href=""><i class="fa fa-duotone fa-plane" id="icon-size6" ></i></a></div>
+                <div id="brightness">Airplay Display</div>
+            </div>
+            <div class="item">
+                <div>
+                    <div id="display">Display</div>
+                    <input type="range" value="2034602" max="4603807">
+                </div>
+            </div>
+            <div class="item">
+                <div>
+                    <div id="display">Sound</div>
+                    <input type="range" value="1395993" max="4603807">
+                </div>
+            </div>
+            <div class="item">
+                <div class="item_one-two">
+                <span class="margin"><img src="images1/wp8971041-black-vertical-4k-wallpapers.jpg" id="imgsize"alt=""></span>
+                <span class="margin1">when the party's over  <div class="mar-lef1">Billie Eilish-Don't you know I'm no good for you?
+                    I've learned to lose you, can't afford to</div></span>
+                <span class="margin2"><i class="fa fa-solid fa-forward"  id="plane-pro1"></i></span>
+                </div>
+            </div>
+          
+        </div>
+        <section>
+
+        </section>
+        <a href="./contact.html" id="btn1" class="link0"><i class="fa fa-solid fa-arrow-right" id="forward"></i></a>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+        const link=document.querySelector('.link');
+        const transitions=document.querySelector('.transitions');
+        link.addEventListener("click",(e)=>{
+            e.preventDefault();
+            transitions.classList.add('slide');
+        setTimeout(()=>{
+            window.location=link.href="Home.html";
+        },900)
+        });
+
+        const link0=document.querySelector('.link0');
+        const transitions1=document.querySelector('.transitions1');
+        link0.addEventListener("click",(e)=>{
+            e.preventDefault();
+            transitions1.classList.add('slide1');
+        setTimeout(()=>{
+            window.location=link0.href="contact.html";
+        },900)
+        });
+
+        const id1=document.querySelector('.id1');
+       id1.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size1').style.color='white' ){
+            document.querySelector('#icon-size1').classList.add('plane-pro0');
+           }
+
+       })
+
+           const id2=document.querySelector('.id2');
+       id2.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size2').style.color='white' ){
+            document.querySelector('#icon-size2').classList.add('plane-pro0');
+           }
+       })
+
+
+           const id3=document.querySelector('.id3');
+       id3.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size3').style.color='white' ){
+            document.querySelector('#icon-size3').classList.add('plane-pro0');
+           }
+        })
+
+        const id6=document.querySelector('.id6');
+       id6.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size6').style.color='white');
+           {
+            document.querySelector('#icon-size6').classList.add('plane-pro0');
+           }
+        })
+
+        const id4=document.querySelector('.id4');
+       id4.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size4').style.color='white')
+           {
+            document.querySelector('#icon-size4').classList.add('plane-pro0');
+           }
+        })
+        const id5=document.querySelector('.id5');
+       id5.addEventListener('click',e=>{
+           e.preventDefault();
+           if(document.querySelector('#icon-size5').style.color='white');
+           {
+            document.querySelector('#icon-size5').classList.add('plane-pro0');
+           }
+        })
+
+
+</script>
+</body>
+</html>

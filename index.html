@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/74ec0e84e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section> 
+        <div class="transitions">
+            <div class="cover cover1" ></div>
+            <div class="cover cover2"></div>
+            <div class="cover cover3"></div>
+            <div class="cover cover4"></div>
+
+        </div>  
+        <div class="transitions1">
+            <div class="cover11 cover5" ></div>
+            <div class="cover11 cover6"></div>
+            <div class="cover11 cover7"></div>
+            <div class="cover11 cover8"></div>
+        </div>
+
+        <div class="transitions2">
+            <div class="cover111 cover9" ></div>
+            <div class="cover111 cover10"></div>
+            <div class="cover111 coverele"></div>
+            <div class="cover111 cover12"></div>
+
+        </div>  
+        
+       
+         <section class="section1">
+            <nav >
+                <ul type="none">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+
+                </ul>
+            </nav>
+            <nav id="social-media">
+                <div id="bgcolor">                   
+                    <div><a href="">  <i class=" fa fa-brands fa-facebook "></i></a></div>
+                 <div><a href=""><i class=" fa fa-brands fa-instagram"></i></a></div>
+                    <div><a href=""><i class=" fa fa-brands fa-linkedin"></i></a></div>
+                    <div><a href=""> <i class=" fa fa-brands fa-twitter"></i></a></div>
+
+
+                </div>
+
+            </nav>
+           
+        </section>  
+
+
+        <section class="section2">
+            <div class="Heading">
+            <h1 id="head1">FIRE </h1>
+            <h1 id="head2">FROM</h1>
+            <h1 id="head3">PURE</h1>
+            <h1 id="head4">SOUL.</h1>
+            </div> 
+
+        </section >  
+        <section class="section3 ">
+            
+    
+                <ul class="slides" type="none">
+                <li><a href="./Home.html" class="link"><i class="fa fa-light fa-circle fa-2x"></i></a></li>
+                <li><a href="./Work.html"class="link0"><i class="fa fa-light fa-circle fa-2x"></i></a></li>
+                <li><a href="./contact.html" class="link00"><i class=" fa fa-light fa-circle fa-2x"></i></a></li>
+                </ul>
+        </section>
+            
+      
+    </section>
+
+
+
+
+<script>
+    const link=document.querySelector('.link');
+    const transitions=document.querySelector('.transitions');
+    link.addEventListener("click",(e)=>{
+        e.preventDefault();
+        transitions.classList.add('slide');
+    setTimeout(()=>{
+        window.location=link.href="Home.html";
+    },900)
+    });
+
+    const link0=document.querySelector('.link0');
+        const transitions1=document.querySelector('.transitions1');
+        link0.addEventListener("click",(e)=>{
+            e.preventDefault();
+            transitions1.classList.add('slide1');
+        setTimeout(()=>{window.location=link0.href="Work.html";},900)
+        });
+
+        const link00=document.querySelector('.link00');
+        const transitions2=document.querySelector('.transitions2');
+        link00.addEventListener("click",(e)=>{
+            e.preventDefault();
+            transitions2.classList.add('slide2');
+        setTimeout(()=>{
+            window.location=link00.href="contact.html";
+        },900)
+        });
+</script>
+
+
+
+</body>
+</html>
